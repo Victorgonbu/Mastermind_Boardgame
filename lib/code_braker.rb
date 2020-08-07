@@ -9,10 +9,4 @@ class CodeBraker
         self.array = string.split(" ")
     end
 
-    
-
-
-
-    
-
 end

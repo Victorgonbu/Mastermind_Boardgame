@@ -28,4 +28,21 @@ class CodeMaker
         end 
       end
     end
+
+    def validate (player)
+      validate = 1
+      while validate < 13
+        puts "red pegs : #{self.red_pegs}, white pegs : #{self.white_pegs}"
+        if self.red_pegs == 4 
+          puts "Congratulations you guest it in #{validate} attempts"
+          validate = 12
+        else 
+          puts "please make yor next attempt #{validate}"
+           player.create_array = gets.chomp
+           self.compare(player.array)
+        end
+        puts "#{player.name} you ran out of turns :c, IA WINS. TOTAL POINTS: IA : 13 #{player.name} : 0" if validate == 12
+        validate += 1
+      end
+    end
 end
