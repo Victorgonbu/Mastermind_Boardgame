@@ -1,3 +1,0 @@
-class CodeMaker
-    
-end
