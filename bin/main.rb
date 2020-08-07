@@ -2,7 +2,7 @@ require_relative '../lib/code_maker.rb'
 require_relative '../lib/code_braker.rb'
 
 puts 'Hello boys this is Mastermind board game i hope you enjoy it'
-
+puts 'Colors available to play with; "blue", "red", "yellow", "gray", "white", "black"'
 puts 'Please let us know your name'
 name = gets.chomp
 
@@ -12,9 +12,8 @@ guest_variable = gets.chomp
 
 player = CodeBraker.new(name)
 player.create_array = guest_variable
-CodeMaker.scramble
+p CodeMaker.scramble
 ia = CodeMaker.new
-ia.compare(player.array)
 ia.validate(player)
 
 
