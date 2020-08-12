@@ -3,7 +3,7 @@ class CodeMaker
 
   attr_accessor :red_pegs, :white_pegs, :new_array
 
-  def scramble
+  def scramble()
     @new_array = []
     4.times do
       @array = %w[blue red yellow green white black].shuffle!
