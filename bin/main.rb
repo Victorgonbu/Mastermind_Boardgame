@@ -12,5 +12,5 @@ guest_variable = gets.chomp
 player = CodeBraker.new(name)
 player.create_array = guest_variable
 ia = CodeMaker.new
-p ia.scramble
+ia.scramble
 ia.validate(player)
